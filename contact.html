@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - iPhone</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1 id="titre">Me contacter</h1>
+    
+    <div id="MenuHaut">
+        <a href="CV_FR.html">🇫🇷 CV Français</a>
+        <a href="CV_EN.html">🇬🇧 English CV</a>
+    </div>
+
+    <div id="MenuCentre">
+        <div class="DivLongue">
+            
+            <div class="menuColonne">
+                <a href="index.html">
+                    <div id="menu1">Accueil</div>
+                </a>
+                <a href="thematique.html">
+                    <div id="menu2">Thématique</div>
+                </a>
+                <a href="modeles.html">
+                    <div id="menu1">Modèles</div>
+                </a>
+                <a href="galerie.html">
+                    <div id="menu2">Galerie</div>
+                </a>
+                <a href="contact.html">
+                    <div id="menu1">Contact</div>
+                </a>
+            </div>
+
+            <!-- Fiche contact -->
+            <div id="SousMenuA">
+                <div class="titre-contenu">
+                    <h2>Formulaire de contact</h2>
+                    
+                    <!-- Nom, Mail, Age, Sexe -->
+                    <form action="#" method="get">
+                        <p>
+                            <label for="nom">Nom :</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </p>
+                        <p>
+                            <label for="mail">Mail :</label>
+                            <input type="email" id="mail" name="mail" required>
+                        </p>
+                        <p>
+                            <label for="age">Age :</label>
+                            <input type="number" id="age" name="age" required>
+                        </p>
+                        <p>
+                            <label for="sexe">Sexe :</label>
+                            <select id="sexe" name="sexe">
+                                <option value="homme">Homme</option>
+                                <option value="femme">Femme</option>
+                            </select>
+                        </p>
+                        <p>
+                            <input type="submit" value="Envoyer">
+                        </p>
+                    </form>
+
+                </div>
+            </div>
+            <!-- Fiche contact -->
+
+        </div>
+
+        <div class="DivLongue">
+            <div id="SousMenuB">
+                Pied de page - Projet HTML/CSS
+            </div>
+        </div>
+    </div>
+</body>
+</html>

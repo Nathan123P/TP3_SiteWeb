@@ -1,0 +1,26 @@
+.titre{
+
+    font-size: 30px;
+}
+
+header h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#iphone18{
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+}
+
+#iphone17{
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+}
