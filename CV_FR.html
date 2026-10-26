@@ -1,66 +1,141 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon CV - Français</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Nathan Petiton - CV</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1 id="titre">Mon Curriculum Vitae</h1>
-    
-    <div id="MenuHaut">
-        <a href="CV_FR.html">🇫🇷 CV Français</a>
-        <a href="CV_EN.html">🇬🇧 English CV</a>
+
+    <div id="cv-container">
+        <!-- Colonne de gauche (Barre latérale) -->
+        <aside class="sidebar">
+            <header>
+                <h1>Nathan Petiton</h1>
+                <h2>TECHNICIEN INFORMATIQUE JUNIOR</h2>
+                <p class="target-position">Poste recherché : Stage en Informatique</p>
+            </header>
+
+            <section>
+                <h3>PROFIL</h3>
+                <ul>
+                    <li>19 ans</li>
+                    <li>169 Rue Laurendeau, Amiens</li>
+                    <li>nathanpetiton@gmail.com</li>
+                    <li>07 66 20 40 23</li>
+                    <li>Permis B</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>LANGUES</h3>
+                <ul>
+                    <li>Anglais : A2</li>
+                    <li>Français : Langue maternelle</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>CENTRES D'INTÉRÊT</h3>
+                <article>
+                    <h4>SPORTS :</h4>
+                    <ul>
+                        <li>Course à pied</li>
+                        <li>Renforcement musculaire</li>
+                    </ul>
+                </article>
+                <article>
+                    <h4>ACTIVITÉS :</h4>
+                    <ul>
+                        <li>Randonnée</li>
+                    </ul>
+                </article>
+            </section>
+        </aside>
+
+        <!-- Colonne de droite (Contenu principal) -->
+        <main class="content">
+            <section>
+                <h2>FORMATION</h2>
+                <article>
+                    <div class="header-row">
+                        <strong>1ère année BTS CIEL (Option A)</strong>
+                        <span>2026 - 2028</span>
+                    </div>
+                    <p>La Providence, Amiens</p>
+                </article>
+
+                <article>
+                    <div class="header-row">
+                        <strong>1ère année BUT Informatique</strong>
+                        <span>2025 - 2026</span>
+                    </div>
+                    <p>IUT d'Amiens</p>
+                </article>
+
+                <article>
+                    <div class="header-row">
+                        <strong>Baccalauréat Technologique - STI2D</strong>
+                        <span>2024 - 2025</span>
+                    </div>
+                    <p>Spécialité : SIN - Lycée Du Vimeu - Friville-Escarbotin</p>
+                </article>
+            </section>
+
+            <section>
+                <h2>EXPÉRIENCES</h2>
+                <article>
+                    <div class="header-row">
+                        <strong>Facteur | LA POSTE - BÉTHANCOURT</strong>
+                        <span>06/2026 - 08/2026</span>
+                    </div>
+                    <ul>
+                        <li>Tri du courrier et des colis pour quatre villages ruraux par rue.</li>
+                        <li>Distribution du courrier et des colis en suivant un itinéraire précis chaque jour.</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <div class="header-row">
+                        <strong>Opérateur Polyvalent | HERNAS CARTONNAGE</strong>
+                        <span>07/2025 - 08/2025</span>
+                    </div>
+                    <ul>
+                        <li>Rangement des palettes de cartons.</li>
+                        <li>Utilisation d'un compacteur à carton pour broyer les chutes.</li>
+                        <li>Ramassage des chutes de carton pour maintenir un espace de travail propre.</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section>
+                <h2>COMPÉTENCES & LOGICIELS</h2>
+                <article>
+                    <p><strong>MAÎTRISE DES LOGICIELS ET LANGAGES DE PROGRAMMATION :</strong></p>
+                    <div class="skills-grid">
+                        <ul>
+                            <li>Word</li>
+                            <li>VS Code</li>
+                            <li>Cisco Packet Tracer</li>
+                        </ul>
+                        <ul>
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>C#</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+            <footer>
+                <p>Merci de l'intérêt porté à ma candidature.</p>
+            </footer>
+        </main>
     </div>
 
-    <div id="MenuCentre">
-        <div class="DivLongue">
-            
-            <div class="menuColonne">
-                <a href="index.html">
-                    <div id="menu1">Accueil</div>
-                </a>
-                <a href="thematique.html">
-                    <div id="menu2">Thématique</div>
-                </a>
-                <a href="modeles.html">
-                    <div id="menu1">Modèles</div>
-                </a>
-                <a href="galerie.html">
-                    <div id="menu2">Galerie</div>
-                </a>
-                <a href="contact.html">
-                    <div id="menu1">Contact</div>
-                </a>
-            </div>
-
-            <div id="SousMenuA">
-                <div class="titre-contenu">
-                    <h2>Mon Profil</h2>
-                    <p class="p_pied_de_page">Étudiant passionné par l'informatique et les nouvelles technologies, notamment l'écosystème Apple.</p>
-                    
-                    <h3>Mes Formations</h3>
-                    <ul>
-                        <li>Diplôme actuel (ex: BTS, BUT, Licence) - Nom de ton école</li>
-                        <li>Baccalauréat - Nom de ton lycée</li>
-                    </ul>
-
-                    <h3>Mes Expériences</h3>
-                    <ul>
-                        <li>Stage en entreprise - Découverte du monde professionnel</li>
-                        <li>Projet étudiant - Création d'un site web en HTML/CSS</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="DivLongue">
-            <div id="SousMenuB">
-                Pied de page - Projet HTML/CSS
-            </div>
-        </div>
-    </div>
 </body>
+
 </html>
