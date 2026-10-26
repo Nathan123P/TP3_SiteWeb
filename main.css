@@ -1,26 +1,45 @@
-.titre{
-
-    font-size: 30px;
+/* --- CORRECTION POUR FORCER L'AFFICHAGE DE HAUT EN BAS --- */
+body {
+    display: flex !important;
+    flex-direction: column !important; /* Force l'empilement vertical */
+    align-items: center !important; /* Centre tout au milieu */
+    justify-content: flex-start !important;
+    margin: 0 !important;
+    min-height: 100vh;
 }
 
-header h1{
+/* Le menu prend toute la largeur tout en haut */
+.menu-centre {
+    width: 100% !important;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f5f7;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
-#iphone18{
-
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    
+.menu-centre a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
 }
 
-#iphone17{
+/* Le titre s'affiche bien au centre en dessous du menu */
+.titre-page {
+    text-align: center;
+    margin-top: 30px !important;
+    margin-bottom: 20px !important;
+    width: 100%;
+}
 
+/* Le conteneur du CV reste bien au centre */
+.cv-centrage {
     display: flex;
-    align-items: center;
-    justify-content: right;
-
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
 }
