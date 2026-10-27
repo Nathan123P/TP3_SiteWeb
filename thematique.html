@@ -7,62 +7,47 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1 id="titre">Pourquoi l'iPhone ?</h1>
-    
-    <div id="MenuHaut">
-        <a href="CV_FR.html">🇫🇷 CV Français</a>
-        <a href="CV_EN.html">🇬🇧 English CV</a>
-    </div>
 
-    <div id="MenuCentre">
-        <div class="DivLongue">
-            
-            <div class="menuColonne">
-                <a href="index.html">
-                    <div id="menu1">Accueil</div>
-                </a>
-                <a href="thematique.html">
-                    <div id="menu2">Thématique</div>
-                </a>
-                <a href="modeles.html">
-                    <div id="menu1">Modèles</div>
-                </a>
-                <a href="galerie.html">
-                    <div id="menu2">Galerie</div>
-                </a>
-                <a href="contact.html">
-                    <div id="menu1">Contact</div>
-                </a>
-            </div>
+    <!-- 1. Le menu et les drapeaux centrés en haut -->
+    <nav class="menu-centre">
+        <a href="index.html">Accueil</a>
+        <a href="thematique.html">Thématique</a>
+        <a href="modeles.html">Modèles</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="contact.html">Contact</a>
+        <span class="separateur">|</span>
+        <a href="CV_FR.html">🇫🇷 FR</a>
+        <a href="CV_EN.html">🇬🇧 EN</a>
+    </nav>
 
-            <div id="SousMenuA">
-                <div class="titre-contenu">
-                    <h2>Présentation de ma thématique</h2>
-                    <p class="p_pied_de_page">
-                        <span class="premiere-phrase">J'ai choisi de présenter l'iPhone pour mon projet.</span>
-                    </p>
-                    
-                    <h3>L'histoire d'une révolution</h3>
-                    <p class="p_pied_de_page">
-                        Créé par Steve Jobs en 2007, ce téléphone a complètement changé notre façon de communiquer, de jouer et de travailler. Le système d'exploitation, iOS, est connu pour sa fluidité et sa sécurité.
-                    </p>
+    <!-- 2. Le titre principal -->
+    <h1 class="titre-page">Pourquoi l'iPhone ?</h1>
 
-                    <h3>Pourquoi ce sujet ?</h3>
-                    <ul>
-                        <li>Je suis passionné par l'innovation technologique.</li>
-                        <li>J'utilise au quotidien l'écosystème Apple.</li>
-                        <li>Le design et les performances m'intéressent beaucoup.</li>
-                    </ul>
-                </div>
-            </div>
+    <!-- 3. Le conteneur pour centrer le contenu -->
+    <main class="cv-centrage">
+        <div id="SousMenuA" style="width: 80%; text-align: center;">
+            <div class="titre-contenu">
+                
+                <h2>Présentation de ma thématique</h2>
+                <p class="p_pied_de_page">
+                    <span class="premiere-phrase">J'ai choisi de présenter l'iPhone pour mon projet.</span>
+                </p>
+                
+                <h3>L'histoire d'une révolution</h3>
+                <p class="p_pied_de_page">
+                    Créé par Steve Jobs en 2007, ce téléphone a complètement changé notre façon de communiquer, de jouer et de travailler. Le système d'exploitation, iOS, est connu pour sa fluidité et sa sécurité.
+                </p>
 
-        </div>
+                <h3>Pourquoi ce sujet ?</h3>
+                <ul style="list-style-position: inside; text-align: center; padding: 0;">
+                    <li>Je suis passionné par l'innovation technologique.</li>
+                    <li>J'utilise au quotidien l'écosystème Apple.</li>
+                    <li>Le design et les performances m'intéressent beaucoup.</li>
+                </ul>
 
-        <div class="DivLongue">
-            <div id="SousMenuB">
-                Pied de page - Projet HTML/CSS
             </div>
         </div>
-    </div>
+    </main>
+
 </body>
 </html>

@@ -7,76 +7,58 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1 id="titre">Me contacter</h1>
-    
-    <div id="MenuHaut">
-        <a href="CV_FR.html">🇫🇷 CV Français</a>
-        <a href="CV_EN.html">🇬🇧 English CV</a>
-    </div>
 
-    <div id="MenuCentre">
-        <div class="DivLongue">
-            
-            <div class="menuColonne">
-                <a href="index.html">
-                    <div id="menu1">Accueil</div>
-                </a>
-                <a href="thematique.html">
-                    <div id="menu2">Thématique</div>
-                </a>
-                <a href="modeles.html">
-                    <div id="menu1">Modèles</div>
-                </a>
-                <a href="galerie.html">
-                    <div id="menu2">Galerie</div>
-                </a>
-                <a href="contact.html">
-                    <div id="menu1">Contact</div>
-                </a>
-            </div>
+    <!-- 1. Le menu et les drapeaux centrés en haut -->
+    <nav class="menu-centre">
+        <a href="index.html">Accueil</a>
+        <a href="thematique.html">Thématique</a>
+        <a href="modeles.html">Modèles</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="contact.html">Contact</a>
+        <span class="separateur">|</span>
+        <a href="CV_FR.html">🇫🇷 FR</a>
+        <a href="CV_EN.html">🇬🇧 EN</a>
+    </nav>
 
-            <!-- Fiche contact -->
-            <div id="SousMenuA">
-                <div class="titre-contenu">
-                    <h2>Formulaire de contact</h2>
-                    
-                    <!-- Nom, Mail, Age, Sexe -->
-                    <form action="#" method="get">
-                        <p>
-                            <label for="nom">Nom :</label>
-                            <input type="text" id="nom" name="nom" required>
-                        </p>
-                        <p>
-                            <label for="mail">Mail :</label>
-                            <input type="email" id="mail" name="mail" required>
-                        </p>
-                        <p>
-                            <label for="age">Age :</label>
-                            <input type="number" id="age" name="age" required>
-                        </p>
-                        <p>
-                            <label for="sexe">Sexe :</label>
-                            <select id="sexe" name="sexe">
-                                <option value="homme">Homme</option>
-                                <option value="femme">Femme</option>
-                            </select>
-                        </p>
-                        <p>
-                            <input type="submit" value="Envoyer">
-                        </p>
-                    </form>
+    <!-- 2. Le titre principal -->
+    <h1 class="titre-page">Me contacter</h1>
 
-                </div>
-            </div>
-            <!-- Fiche contact -->
+    <!-- 3. Le conteneur pour centrer le contenu -->
+    <main class="cv-centrage">
+        <div id="SousMenuA" style="width: 80%; text-align: center;">
+            <div class="titre-contenu">
+                
+                <h2>Formulaire de contact</h2>
+                
+                <!-- Nom, Mail, Age, Sexe : Contraintes du projet respectées -->
+                <form action="#" method="get" style="display: inline-block; text-align: left; margin-top: 20px;">
+                    <p>
+                        <label for="nom">Nom :</label><br>
+                        <input type="text" id="nom" name="nom" required style="width: 100%; padding: 5px;">
+                    </p>
+                    <p>
+                        <label for="mail">Mail :</label><br>
+                        <input type="email" id="mail" name="mail" required style="width: 100%; padding: 5px;">
+                    </p>
+                    <p>
+                        <label for="age">Âge :</label><br>
+                        <input type="number" id="age" name="age" required style="width: 100%; padding: 5px;">
+                    </p>
+                    <p>
+                        <label for="sexe">Sexe :</label><br>
+                        <select id="sexe" name="sexe" style="width: 100%; padding: 5px;">
+                            <option value="homme">Homme</option>
+                            <option value="femme">Femme</option>
+                        </select>
+                    </p>
+                    <p style="text-align: center; margin-top: 20px;">
+                        <input type="submit" value="Envoyer" style="padding: 10px 20px; cursor: pointer;">
+                    </p>
+                </form>
 
-        </div>
-
-        <div class="DivLongue">
-            <div id="SousMenuB">
-                Pied de page - Projet HTML/CSS
             </div>
         </div>
-    </div>
+    </main>
+
 </body>
 </html>
