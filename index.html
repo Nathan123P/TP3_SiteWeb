@@ -4,65 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'Univers de l'iPhone</title>
+    <!-- Uniquement le CSS global pour cette page -->
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1 id="titre">Tout savoir sur l'iPhone d'Apple</h1>
-    
-    <div id="MenuHaut">
-        <a href="CV_FR.html">🇫🇷 CV Français</a>
-        <a href="CV_EN.html">🇬🇧 English CV</a>
-    </div>
 
-    <div id="MenuCentre">
-        <div class="DivLongue">
+    <!-- 1. Le menu et les drapeaux centrés en haut -->
+    <nav class="menu-centre">
+        <a href="index.html">Accueil</a>
+        <a href="thematique.html">Thématique</a>
+        <a href="modeles.html">Modèles</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="contact.html">Contact</a>
+        <span class="separateur">|</span>
+        <a href="CV_FR.html">🇫🇷 FR</a>
+        <a href="CV_EN.html">🇬🇧 EN</a>
+    </nav>
+
+    <!-- 2. Le titre principal -->
+    <h1 class="titre-page">Tout savoir sur l'iPhone d'Apple</h1>
+
+    <!-- 3. Le conteneur pour centrer le contenu -->
+    <main class="cv-centrage">
+        <div id="SousMenuA" style="width: 80%; text-align: center;">
             
-            
-            <div class="menuColonne">
-                <a href="index.html">
-                    <div id="menu1">Accueil</div>
-                </a>
-                <a href="thematique.html">
-                    <div id="menu2">Thématique</div>
-                </a>
-                <a href="modeles.html">
-                    <div id="menu1">Modèles</div>
-                </a>
-                <a href="galerie.html">
-                    <div id="menu2">Galerie</div>
-                </a>
-                <a href="contact.html">
-                    <div id="menu1">Contact</div>
-                </a>
+            <div id="news">
+                iPhone 15 Pro
             </div>
-
-            <div id="SousMenuA">
-                <div id="news">
-                    iPhone 15 Pro
-                </div>
-                <div class="titre-contenu">
-                    <h2>Bienvenue sur mon site dédié à Apple</h2>
-                    <p class="p_pied_de_page">
-                        <span class="premiere-phrase">L'iPhone a révolutionné le monde des smartphones.</span> 
-                        <span class="deuxieme-phrase">Découvrez l'histoire, les modèles et les innovations d'Apple.</span>
-                    </p>
-                    
-                    <h3>Ce que vous trouverez ici :</h3>
-                    <ul>
-                        <li>L'évolution du design depuis 2007</li>
-                        <li>Les caractéristiques d'iOS</li>
-                        <li>Mon parcours et mon CV</li>
-                    </ul>
-                </div>
+            
+            <div class="titre-contenu">
+                <h2>Bienvenue sur mon site dédié à Apple</h2>
+                
+                <p class="p_pied_de_page">
+                    <span class="premiere-phrase">L'iPhone a révolutionné le monde des smartphones.</span> 
+                    <br><br>
+                    <span class="deuxieme-phrase">Découvrez l'histoire, les modèles et les innovations d'Apple.</span>
+                </p>
+                
+                <h3>Ce que vous trouverez ici :</h3>
+                <ul style="list-style-position: inside; text-align: center; padding: 0;">
+                    <li>L'évolution du design depuis 2007</li>
+                    <li>Les caractéristiques d'iOS</li>
+                    <li>Mon parcours et mon CV</li>
+                </ul>
             </div>
 
         </div>
+    </main>
 
-        <div class="DivLongue">
-            <div id="SousMenuB">
-                Pied de page - Projet HTML/CSS
-            </div>
-        </div>
-    </div>
 </body>
 </html>
