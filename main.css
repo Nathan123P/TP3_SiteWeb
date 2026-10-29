@@ -139,12 +139,6 @@ body {
     text-align: center;
 }
 
-.bouton-envoyer {
-    padding: 10px 20px;
-    cursor: pointer; /* Change la souris en petite main pour indiquer que c'est cliquable */
-    border-radius: 5px;
-}
-
 /* --- STYLES POUR LA GALERIE --- */
 .galerie-conteneur {
     display: flex;
