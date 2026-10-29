@@ -5,11 +5,12 @@ body {
     justify-content: flex-start !important;
     margin: 0 !important;
     min-height: 100vh;
-    
-    /* AJOUTEZ CES DEUX LIGNES POUR CORRIGER LA DIFFÉRENCE : */
-    background-color: #f5f5f7 !important; /* Force le fond gris très clair style Apple partout */
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; /* Force la police moderne partout */
+    background-color: white !important;
+    /* Force le fond gris très clair style Apple partout */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+    /* Force la police moderne partout */
 }
+
 /* Le menu prend toute la largeur tout en haut */
 .menu-centre {
     width: 100% !important;
@@ -24,6 +25,7 @@ body {
 }
 
 .menu-centre a {
+    /* Enleve le soulignage des onglets de la navbar */
     text-decoration: none;
     color: #333;
     font-weight: bold;
@@ -44,4 +46,157 @@ body {
     justify-content: center;
     width: 100%;
     margin-bottom: 50px;
+}
+
+
+.bloc-info {
+
+    background-color: #f0eeee;
+    padding: 25px 40px;
+    /* Espace à l'intérieur du bloc */
+    margin: 20px auto;
+    /* Espacement à l'extérieur du bloc. auto pour centrer parfaitement le bloc sur la page */
+    border-radius: 12px;
+    /* Arrondit les coins de votre bloc */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    /* Crée une petite ombre */
+    max-width: 800px;
+    /* Bloque la largeur maximum à 800 pixels */
+    text-align: left;
+    /* Force le texte à s'aligner proprement à gauche à l'intérieur de la boîte */
+}
+
+/* On garde les titres centrés à l'intérieur des blocs */
+.bloc-info h2,
+.bloc-info h3 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+}
+
+/* Espacement des puces pour que ce soit aéré */
+.bloc-info li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    /* Définit l'espacement vertical entre les lignes */
+}
+
+/* --- NOUVELLES CLASSES POUR REMPLACER LES STYLES INLINE --- */
+
+/* Pour centrer le contenu principal sous le menu */
+.conteneur-central {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Style de la petite phrase d'actualité sur l'accueil */
+.boite-news {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #0071e3;
+    /* Bleu Apple */
+}
+
+/* --- STYLES POUR LE FORMULAIRE DE CONTACT --- */
+.titre-centre {
+    text-align: center;
+}
+
+.formulaire-contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.groupe-formulaire {
+    margin-bottom: 15px;
+}
+
+.groupe-formulaire-dernier {
+    margin-bottom: 20px;
+}
+
+/* Remplace le <br> interdit et met en gras */
+.label-formulaire {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style des zones de texte (nom, mail, age, sexe) */
+.champ-formulaire {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    /* Évite que le champ dépasse de la boîte */
+}
+
+.bouton-conteneur {
+    text-align: center;
+}
+
+.bouton-envoyer {
+    padding: 10px 20px;
+    cursor: pointer; /* Change la souris en petite main pour indiquer que c'est cliquable */
+    border-radius: 5px;
+}
+
+/* --- STYLES POUR LA GALERIE --- */
+.galerie-conteneur {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.image-galerie {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* --- STYLES POUR LES TABLEAUX COMPARATIFS --- */
+.tableau-comparatif {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+.image-tableau {
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+/* --- STYLES BASIQUES POUR LA GALERIE --- */
+/* la grande boîte qui contient toutes les images */
+.galerie-conteneur { 
+    display: flex; /*  Flexbox pour images côte à côte */
+    justify-content: center; /* Centre toutes les images au milieu de la page */
+    gap: 20px; /* Crée un espace vide de 20 pixels entre chaque image */
+    flex-wrap: wrap; /* si écran trop petit les images passent à la ligne*/
+    margin-top: 30px; /*marge de 30 pixels au-dessus de la galerie pour l'aérer */
+}
+
+/* le petit bloc qui regroupe une seule image et son texte */
+.carte-galerie { 
+    text-align: center; 
+}
+
+/*modifier l'apparence des images elles-mêmes */
+.image-galerie { 
+    width: 150px; /* l'image à 150 pixels pour uniformiser la galerie */
+    height: 150px; /* hauteur à 150 pixels */
+    border-radius: 10px; /* Arrondit les coins de l'image */
+    border: 2px solid #ccc; /* trait gris clair autour de l'image */
+}
+
+
+.legende { 
+    font-weight: bold; /* le texte en gras */
+    margin-top: 10px; /* espace entre le haut du texte et le bas de l'image */
+    color: #333; /* couleur gris très foncé au texte */
 }

@@ -1,47 +1,70 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerie - iPhone</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
 
-    <!-- 1. Le menu et les drapeaux centrés en haut -->
+    <!-- Le menu -->
     <nav class="menu-centre">
         <a href="index.html">Accueil</a>
         <a href="thematique.html">Thématique</a>
         <a href="modeles.html">Modèles</a>
         <a href="galerie.html">Galerie</a>
+        <a href="histoire.html">Histoire</a>
         <a href="contact.html">Contact</a>
         <span class="separateur">|</span>
         <a href="CV_FR.html">🇫🇷 FR</a>
         <a href="CV_EN.html">🇬🇧 EN</a>
     </nav>
 
-    <!-- 2. Le titre principal -->
     <h1 class="titre-page">Galerie en images</h1>
 
-    <!-- 3. Le conteneur pour centrer le contenu -->
     <main class="cv-centrage">
-        <div id="SousMenuA" style="width: 80%; text-align: center;">
-            <div class="titre-contenu">
-                
-                <h2>Galerie des anciens modèles d'iPhone</h2>
-                <p class="p_pied_de_page">Voici quelques modèles emblématiques :</p>
+        <div id="SousMenuA" class="conteneur-central">
 
-                <!-- Les différents iPhone centrés et espacés -->
-                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 30px;">
-                    <img src="https://via.placeholder.com/150" alt="iPhone 2G" width="150" height="150" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <img src="https://via.placeholder.com/150" alt="iPhone 4" width="150" height="150" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <img src="https://via.placeholder.com/150" alt="iPhone X" width="150" height="150" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                    <img src="https://via.placeholder.com/150" alt="iPhone 13" width="150" height="150" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <div class="bloc-info">
+                <h2 style="text-align: center;">Galerie des anciens modèles d'iPhone</h2>
+                <p class="p_pied_de_page" style="text-align: center;">Voici quelques modèles emblématiques :</p>
+
+                <!-- Conteneur principal de la galerie -->
+                <div class="galerie-conteneur">
+
+                    <!-- IMAGE 1 -->
+                    <div class="carte-galerie">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK22MkjNASPAjdfrUAELh40qxQtrGqjo1kYzljxaQZPw&s=10" alt="iPhone 2G" class="image-galerie">
+                        <p class="legende">iPhone 2G</p>
+                    </div>
+
+                    <!-- IMAGE 2 -->
+                    <div class="carte-galerie">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy-ovnqXtVC3nPEvhIrQMMWqS7xQVTkj8NYXs55Iz-cA&s=10" alt="iPhone 4" class="image-galerie">
+                        <p class="legende">iPhone 4</p>
+                    </div>
+
+                    <!-- IMAGE 3 -->
+                    <div class="carte-galerie">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxljyAJT7-tYrJ7NFJn9PHvQIPTwnq4EEiAVQfU7O9og&s=10" alt="iPhone X" class="image-galerie">
+                        <p class="legende">iPhone X</p>
+                    </div>
+
+                    <!-- IMAGE 4 -->
+                    <div class="carte-galerie">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlg0DVS2KHowlov5Z6HQwK2PMhvqXUMdatoeERofattQ&s=10" alt="iPhone 13" class="image-galerie">
+                        <p class="legende">iPhone 13</p>
+                    </div>
+
                 </div>
-
             </div>
+
         </div>
     </main>
 
 </body>
+
 </html>

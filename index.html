@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'Univers de l'iPhone</title>
-    <!-- Uniquement le CSS global pour cette page -->
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
 
-    <!-- 1. Le menu et les drapeaux centrés en haut -->
+    <!-- 1. Le menu -->
     <nav class="menu-centre">
         <a href="index.html">Accueil</a>
         <a href="thematique.html">Thématique</a>
         <a href="modeles.html">Modèles</a>
         <a href="galerie.html">Galerie</a>
+        <a href="histoire.html">Histoire</a>
         <a href="contact.html">Contact</a>
         <span class="separateur">|</span>
         <a href="CV_FR.html">🇫🇷 FR</a>
@@ -24,33 +26,49 @@
     <!-- 2. Le titre principal -->
     <h1 class="titre-page">Tout savoir sur l'iPhone d'Apple</h1>
 
-    <!-- 3. Le conteneur pour centrer le contenu -->
+    <!-- 3. Le conteneur (utilisation de la nouvelle classe CSS) -->
     <main class="cv-centrage">
-        <div id="SousMenuA" style="width: 80%; text-align: center;">
-            
-            <div id="news">
-                iPhone 15 Pro
+        <div id="SousMenuA" class="conteneur-central">
+
+            <div id="news" class="boite-news">
+                Actu : iPhone 15 Pro
             </div>
-            
+
             <div class="titre-contenu">
-                <h2>Bienvenue sur mon site dédié à Apple</h2>
-                
-                <p class="p_pied_de_page">
-                    <span class="premiere-phrase">L'iPhone a révolutionné le monde des smartphones.</span> 
-                    <br><br>
-                    <span class="deuxieme-phrase">Découvrez l'histoire, les modèles et les innovations d'Apple.</span>
-                </p>
-                
-                <h3>Ce que vous trouverez ici :</h3>
-                <ul style="list-style-position: inside; text-align: center; padding: 0;">
-                    <li>L'évolution du design depuis 2007</li>
-                    <li>Les caractéristiques d'iOS</li>
-                    <li>Mon parcours et mon CV</li>
-                </ul>
+                <div class="bloc-info">
+                    <h2>L'appareil qui a changé le monde</h2>
+                    <p class="p_pied_de_page">
+                        Lancé le 9 janvier 2007 par Steve Jobs, l'iPhone a radicalement transformé l'industrie de la
+                        téléphonie. En remplaçant les claviers physiques par un grand écran tactile multi-touch, Apple a
+                        conçu bien plus qu'un simple téléphone : un véritable ordinateur de poche intuitif.
+                    </p>
+                </div>
+
+                <div class="bloc-info">
+                    <h3>L'écosystème iOS</h3>
+                    <p class="p_pied_de_page">
+                        La force majeure de l'iPhone repose sur iOS, son système d'exploitation exclusif. Reconnu pour
+                        sa stabilité, sa fluidité et ses mises à jour régulières, il garantit une sécurité optimale.
+                        L'introduction de l'App Store en 2008 a également créé une nouvelle économie numérique mondiale.
+                    </p>
+                </div>
+
+                <div class="bloc-info">
+                    <h3>Les grandes innovations</h3>
+                    <ul>
+                        <li><strong>Biométrie :</strong> L'arrivée de Touch ID (empreinte) puis de Face ID
+                            (reconnaissance faciale 3D).</li>
+                        <li><strong>Photographie :</strong> Des capteurs avancés intégrant le mode Nuit, le mode
+                            Portrait et la vidéo Cinématique.</li>
+                        <li><strong>Puces Bionic :</strong> Des processeurs conçus par Apple offrant des performances
+                            supérieures à de nombreux ordinateurs classiques.</li>
+                    </ul>
+                </div>
             </div>
 
         </div>
     </main>
 
 </body>
+
 </html>

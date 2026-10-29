@@ -1,4 +1,5 @@
-/* Reset basique pour éviter les marges par défaut */ * {
+/* Reset basique pour éviter les marges par défaut */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;

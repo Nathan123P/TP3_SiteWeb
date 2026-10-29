@@ -1,97 +1,128 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modèles - iPhone</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
 
-    <!-- 1. Le menu et les drapeaux centrés en haut -->
     <nav class="menu-centre">
         <a href="index.html">Accueil</a>
         <a href="thematique.html">Thématique</a>
         <a href="modeles.html">Modèles</a>
         <a href="galerie.html">Galerie</a>
+        <a href="histoire.html">Histoire</a>
         <a href="contact.html">Contact</a>
         <span class="separateur">|</span>
         <a href="CV_FR.html">🇫🇷 FR</a>
         <a href="CV_EN.html">🇬🇧 EN</a>
     </nav>
 
-    <!-- 2. Le titre principal -->
     <h1 class="titre-page">Comparatif des Modèles</h1>
 
-    <!-- 3. Le conteneur pour centrer le contenu -->
     <main class="cv-centrage">
-        <div id="SousMenuA" style="width: 80%; display: flex; flex-direction: column; align-items: center; gap: 30px;">
-            
-            <div class="table">
-                
-                <div class="table_1">
-                    <table>
-                        <caption>Gamme iPhone 15</caption>
-                        <thead>
-                            <tr>
-                                <th>Modèle</th>
-                                <th>Puce</th>
-                                <th>Prix de départ</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>iPhone 15 Pro Max</th>
-                                <td>A17 Pro</td>
-                                <td>1 479 €</td>
-                            </tr>
-                            <tr>
-                                <th>iPhone 15 Pro</th>
-                                <td>A17 Pro</td>
-                                <td>1 229 €</td>
-                            </tr>
-                            <tr>
-                                <th>iPhone 15</th>
-                                <td>A16 Bionic</td>
-                                <td>969 €</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+        <div id="SousMenuA" class="conteneur-central">
 
-                <div class="text_table" style="text-align: center; margin: 20px 0; font-weight: bold;">
-                    <span>Anciennes générations</span>
-                </div>
-                
-                <div class="table_2">
-                    <table>
-                        <caption>Gamme iPhone 14</caption>
-                        <thead>
-                            <tr>
-                                <th>Modèle</th>
-                                <th>Appareil Photo</th>
-                                <th>Stockage max</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>iPhone 14 Pro</th>
-                                <td>48 Mpx</td>
-                                <td>1 To</td>
-                            </tr>
-                            <tr>
-                                <th>iPhone 14</th>
-                                <td>12 Mpx</td>
-                                <td>512 Go</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="bloc-info">
+                <h2>Gamme iPhone 18</h2>
+                <table border="1" class="tableau-comparatif">
+                    <tr>
+                        <th>Caractéristiques</th>
+                        <th>
+                            <span>iPhone 18 Pro</span>
+                            <img src="data:image/webp;base64,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"
+                                alt="iPhone 18 Pro" width="80" class="image-tableau">
+                        </th>
+                        <th>
+                            <span>iPhone 18 Pro Max</span>
+                            <img src="data:image/webp;base64,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"
+                                alt="iPhone 18 Pro Max" width="80" class="image-tableau">
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Écran</td>
+                        <td>6,3" Super Retina XDR ProMotion</td>
+                        <td>6,9" Super Retina XDR ProMotion</td>
+                    </tr>
+                    <tr>
+                        <td>Puce</td>
+                        <td>A20 Pro (Gravure 2nm)</td>
+                        <td>A20 Pro (Gravure 2nm)</td>
+                    </tr>
+                    <tr>
+                        <td>Appareil Photo</td>
+                        <td>Triple 48 Mpx + LiDAR</td>
+                        <td>Triple 48 Mpx + Zoom x5</td>
+                    </tr>
+                    <tr>
+                        <td>Autonomie</td>
+                        <td>Jusqu'à 27h de vidéo</td>
+                        <td>Jusqu'à 33h de vidéo</td>
+                    </tr>
+                    <tr>
+                        <td>Stockage de base</td>
+                        <td>128 Go</td>
+                        <td>256 Go</td>
+                    </tr>
+                    <tr>
+                        <td>Prix de lancement</td>
+                        <td>À partir de 1 229 €</td>
+                        <td>À partir de 1 479 €</td>
+                    </tr>
+                </table>
+            </div>
 
+            <div class="bloc-info">
+                <h2>Générations Précédentes</h2>
+                <table border="1" class="tableau-comparatif">
+                    <tr>
+                        <th>Caractéristiques</th>
+                        <th>
+                            <span>iPhone 17</span>
+                            <img src="data:image/webp;base64,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"
+                                alt="iPhone 17" width="80" class="image-tableau">
+                        </th>
+                        <th>
+                            <span>iPhone 16</span>
+                            <img src="data:image/webp;base64,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"
+                                alt="iPhone 16" width="80" class="image-tableau">
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Écran</td>
+                        <td>6,1" Super Retina XDR</td>
+                        <td>6,1" Super Retina XDR</td>
+                    </tr>
+                    <tr>
+                        <td>Puce</td>
+                        <td>A19 Bionic</td>
+                        <td>A18 Bionic</td>
+                    </tr>
+                    <tr>
+                        <td>Appareil Photo</td>
+                        <td>Double 48 Mpx</td>
+                        <td>Double 48 Mpx</td>
+                    </tr>
+                    <tr>
+                        <td>Connectique</td>
+                        <td>USB-C (USB 2.0)</td>
+                        <td>USB-C (USB 2.0)</td>
+                    </tr>
+                    <tr>
+                        <td>Prix (lancement)</td>
+                        <td>À partir de 969 €</td>
+                        <td>À partir de 969 €</td>
+                    </tr>
+                </table>
             </div>
 
         </div>
     </main>
 
 </body>
+
 </html>
