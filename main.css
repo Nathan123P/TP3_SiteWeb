@@ -1,3 +1,13 @@
+/* 
+=========================================================
+Projet : Création d'un site Personnel - Thème : L'iPhone d'apple
+Auteur : Nathan Petiton
+Date : 16 Octobre 2026
+Description : Feuille de style gérant le design de toutes les pages du site personnel sur l'iPhone d'apple.
+========================================================= 
+*/
+
+
 body {
     display: flex !important;
     flex-direction: column !important;

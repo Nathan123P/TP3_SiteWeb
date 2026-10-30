@@ -1,3 +1,13 @@
+/* 
+=========================================================
+Projet : Création d'un site Personnel - Thème : L'iPhone d'apple
+Auteur : Nathan Petiton
+Date : 16 Octobre 2026
+Description : Feuille de style gérant le design des deux cvs (français et anglais) du site personnel sur l'iPhone d'apple.
+========================================================= 
+*/
+
+
 /* Reset basique pour éviter les marges par défaut */
 * {
     box-sizing: border-box;
