@@ -201,13 +201,33 @@ body {
 
 
 .legende { 
-    font-weight: bold; /* le texte en gras */
-    margin-top: 10px; /* espace entre le haut du texte et le bas de l'image */
-    color: #333; /* couleur gris très foncé au texte */
+    font-weight: bold; /* Le texte en gras */
+    margin-top: 10px; /* Espace entre le haut du texte et le bas de l'image */
+    color: #333; /* Couleur gris très foncé au texte */
 }
 
-/* --- STYLE POUR LES DRAPEAUX DU MENU --- */
+/* Drapeaux */
 .icone-drapeau {
     width: 20px; /* Taille du drapeau */
     vertical-align: middle; /* Aligne le drapeau avec le texte à côté */
+}
+
+/* Le code dans cette boucle s'active UNIQUEMENT si l'écran fait moins de 768px de large */
+@media (max-width: 768px) {
+    
+    .menu-centre {
+        display: flex;
+        flex-wrap: wrap; /* Fait que le menu passe à la ligne suivante */
+        gap: 10px; /* Ajoute un petit espace entre les liens quand ils s'empilent */
+        padding: 10px;
+    }
+
+    .conteneur-central {
+        width: 95%; /* Les blocs gris prendront 95% */
+    }
+    
+    .image-galerie, .image-tableau {
+        max-width: 100%; /* Empêche les images de déborder de l'écran */
+        height: auto;
+    }
 }
