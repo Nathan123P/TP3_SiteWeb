@@ -51,7 +51,7 @@ body {
 
 .bloc-info {
 
-    background-color: #f0eeee;
+    background-color: #f5f5f7;
     padding: 25px 40px;
     /* Espace à l'intérieur du bloc */
     margin: 20px auto;
@@ -194,4 +194,10 @@ body {
     font-weight: bold; /* le texte en gras */
     margin-top: 10px; /* espace entre le haut du texte et le bas de l'image */
     color: #333; /* couleur gris très foncé au texte */
+}
+
+/* --- STYLE POUR LES DRAPEAUX DU MENU --- */
+.icone-drapeau {
+    width: 20px; /* Taille du drapeau */
+    vertical-align: middle; /* Aligne le drapeau avec le texte à côté */
 }
