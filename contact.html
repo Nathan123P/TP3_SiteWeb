@@ -50,7 +50,7 @@ Description : page de contact du site personnel sur l'iphone d'apple. offre aux 
                 <h2 class="titre-centre">Formulaire de contact</h2>
 
                 <!-- Utilisation exclusive des classes css pour le design -->
-                <form action="#" method="get" class="formulaire-contact">
+                <form action="#" method="get" class="formulaire-contact"> <!-- ici action="#" veut dire que les données ne sont pas envoyées vers une vraie base de données et method="get" elle transmet  les informations saisies-->
 
                     <p class="groupe-formulaire">
                         <label for="nom" class="label-formulaire">Nom :</label>
@@ -66,7 +66,8 @@ Description : page de contact du site personnel sur l'iphone d'apple. offre aux 
                         <label for="age" class="label-formulaire">Âge :</label>
                         <input type="number" id="age" name="age" required class="champ-formulaire">
                     </p>
-
+                    
+                    <!--Utilisation d'un menu déroulant-->
                     <p class="groupe-formulaire-dernier">
                         <label for="sexe" class="label-formulaire">Sexe :</label>
                         <select id="sexe" name="sexe" class="champ-formulaire">
