@@ -231,3 +231,12 @@ body {
         height: auto;
     }
 }
+
+/* Permet de passer l'année à la ligne sans utiliser la balise interdite <br> */
+.annee {
+    display: block; 
+    font-weight: normal; /* Enlève le gras pour différencier du titre */
+    font-size: 14px; /* Écrit un peu plus petit */
+    color: #666; /* Met une couleur gris clair très "Apple" */
+    margin-top: 5px; /* Petit espace discret */
+}
