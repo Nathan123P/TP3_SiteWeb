@@ -234,9 +234,12 @@ body {
 
 /* Permet de passer l'année à la ligne sans utiliser la balise interdite <br> */
 .annee {
-    display: block; 
+    display: block;
     font-weight: normal; /* Enlève le gras pour différencier du titre */
-    font-size: 14px; /* Écrit un peu plus petit */
-    color: #666; /* Met une couleur gris clair très "Apple" */
-    margin-top: 5px; /* Petit espace discret */
+    font-size: 14px;
+    color: #666;
+}
+
+.tableau-comparatif, .tableau-comparatif th, .tableau-comparatif td {
+    border: 1px solid black;
 }
